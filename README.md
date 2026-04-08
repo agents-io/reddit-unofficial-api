@@ -90,6 +90,40 @@ npm run build
 |------|-------------|
 | `reddit_ensure_session` | Verify everything is connected and you're logged in |
 
+## What can you do with this?
+
+### Community Management
+- **Monitor your posts**: "check my PokeClaw post for new comments that need replies" → scrapes all comments, categorizes them (bug report, question, feature request, positive feedback), drafts replies, you approve, it posts
+- **Batch reply**: reply to 10+ comments in one go with personalized responses, auto-verified to make sure each reply goes to the right person
+- **Update your posts**: edit the body of an existing post to add changelogs, new links, or corrections
+
+### Research & Competitive Intelligence
+- **Search Reddit**: find all posts mentioning your product, a competitor, or a topic across any subreddit
+- **User research**: look up anyone's post history, comment history, karma breakdown
+- **Subreddit discovery**: find relevant subreddits for your niche, check their rules before posting
+
+### Content & Marketing
+- **Cross-post to multiple subreddits**: draft a post, you approve, submit to r/LocalLLaMA, r/androiddev, r/machinelearning, etc.
+- **Track engagement**: check which of your posts/comments are getting upvoted or replied to
+- **Save interesting threads**: bookmark posts and comments for later reference
+
+### Inbox & Messaging
+- **Read DMs**: check if anyone messaged you about your project
+- **Send DMs**: reach out to users who want to contribute or reported bugs
+- **Mark as read**: clean up your inbox
+
+### Engagement
+- **Upvote helpful feedback**: upvote users who gave useful bug reports or feature suggestions
+- **Subscribe to subreddits**: join relevant communities from your AI assistant
+
+### Deep Research
+- **Topic deep-dive**: "research what Reddit thinks about on-device LLM apps" → searches multiple subreddits, reads top posts and comment threads, summarizes sentiment, common complaints, feature requests, and what users actually want
+- **Competitor analysis**: "what are people saying about DroidRun vs OpenClaw" → finds all relevant threads, extracts comparisons, user experiences, pros/cons mentioned
+- **Market validation**: "is there demand for WhatsApp auto-reply bots" → searches across subreddits, analyzes upvotes and engagement, identifies the audience and their pain points
+- **Trend tracking**: "what local LLM topics are trending this week on r/LocalLLaMA" → fetches top/rising posts, identifies emerging themes
+
+Everything runs through your existing browser session. Zero cost, no API keys, no rate limit surprises.
+
 ## Why not just use the official Reddit API?
 
 Reddit killed free API access in 2023. The official API now requires app registration, OAuth flows, and has strict rate limits. If you're building something for personal use with your own account, jumping through those hoops makes no sense.
