@@ -1,0 +1,26 @@
+{
+  "name": "@nicoletools/reddit-unofficial-api",
+  "version": "0.1.0",
+  "description": "Free Reddit API through Chrome DevTools MCP. No API keys needed, just a logged-in browser.",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "reddit-unofficial-api": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "tsx": "^4.19.4",
+    "@types/node": "^22.15.3"
+  },
+  "keywords": ["reddit", "api", "mcp", "chrome-devtools", "unofficial", "free"],
+  "license": "MIT"
+}
