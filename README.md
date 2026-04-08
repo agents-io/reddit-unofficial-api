@@ -130,6 +130,32 @@ Reddit killed free API access in 2023. The official API now requires app registr
 
 This approach uses the exact same endpoints Reddit's own website uses. Your browser is already authenticated. We just let your AI assistant use that same session.
 
+## Safety Guidelines — Don't Get Your Account Banned
+
+This tool uses your real Reddit account. Reddit can't tell the difference between you typing and this tool typing, because it's the same browser session. That's the whole point. But it also means you need to behave like a human.
+
+**Why the risk is low:**
+- Requests come from your normal browser with your normal cookies. To Reddit's servers, it looks identical to you clicking buttons manually.
+- The server adds delays between write operations (1.5s minimum). You're not hammering their API.
+- Content is genuine (you write and approve the replies), not auto-generated spam.
+
+**Rules to follow:**
+- **Don't batch reply too aggressively.** 10-15 replies in one session is fine. 50 replies in 10 minutes is not. Spread it out across a few hours if you have a lot to respond to.
+- **Vary your reply content.** If every reply has the exact same structure, links, and call-to-action, Reddit's spam filter will notice. Make each reply address the specific person's point.
+- **Mix in normal behavior.** Browse, upvote a few things, read some posts. Don't make your entire session activity look like a bot replying to everything.
+- **Don't use this for spam, vote manipulation, or astroturfing.** Obviously. This is for managing your own community and doing research, not gaming Reddit.
+- **Respect subreddit rules.** Some subs don't allow self-promotion. Check before cross-posting.
+
+**What happens if Reddit flags you:**
+- Most likely: temporary rate limit (can't post for a few hours)
+- Less likely: shadowban (your replies only visible to you, check at r/ShadowBan)
+- Very unlikely: account suspension (only for obvious spam or manipulation)
+
+**Recovery:**
+- If rate limited, just wait. It resets.
+- If shadowbanned, appeal at reddit.com/appeal. Usually reversed if your content is genuine.
+- Best prevention: keep it natural. If a human wouldn't post 30 comments in 5 minutes, don't do it with this tool either.
+
 ## Limitations
 
 - Needs Chrome running with DevTools Protocol (port 9222)
